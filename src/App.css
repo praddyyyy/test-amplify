@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slide .image {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.slide {
+  opacity: 0.6;
+  transform: scale(0.8);
+  transition: 0.1s;
+}
+
+.slide-active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.play-btn:hover {
+  cursor: pointer;
+}
+
+.slick-card {
+  border: 1px solid #eaeaea;
+  background: black;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 120px;
+  width: 100px;
+  position: relative;
+}
+
+.slick-slide > div {
+  margin: 0 0px;
+}
+
+.slick-list {
+  margin: 0 0px;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image:hover {
+  cursor: pointer;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  display: none;
+}
+
+.slick-card:hover .caption {
+  display: block;
+}
+
+.additional-info {
+  display: none;
+}
+
+.caption:hover .additional-info {
+  display: block;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slick-prev i,
+.slick-next i {
+  font-size: 20px;
+  color: #333;
+}
+
+.rotate-screen {
+  transform: rotate(90deg);
+}
